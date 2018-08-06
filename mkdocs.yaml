@@ -1,0 +1,38 @@
+site_name: Exsolution knowledge base
+theme: material
+repo_url: https://github.com/exsolution/ext-doc
+repo_name: Github
+edit_uri: edit/master/docs/
+
+
+markdown_extensions:
+  - pymdownx.emoji:
+      emoji_generator: !!python/name:pymdownx.emoji.to_svg
+
+
+# Determines if a broken link to a page within the documentation is considered a warning
+# or an error (link to a page not listed in the pages setting).
+# Set to true to halt processing when a broken link is found, false prints a warning.
+strict: true
+pages:
+  - Home: index.md
+  - Masternodes:
+    - "Introduction": masternodes/introduction.md
+    - "Setup guide (Linux)": masternodes/.md
+    - "Setup guide (Windows)": masternodes/how_to_check_datadog.md
+  - International:
+    - French:
+      - Masternodes:
+        - "Guide de deploiement (Windows)": international/fr/masternodes/deployment_win.md
+    - Russian:
+      - Masternodes:
+        - "руководство по настройке (Windows)": international/ru/masternodes/deployment_win.md
+    - Chinese:
+      - Masternodes:
+        - "设置指南 (Windows)": international/cn/masternodes/deployment_win.md
+    - Japanese:
+      - Masternodes:
+        - "セットアップガイド (Windows)": international/cn/masternodes/deployment_win.md
+    - Korean:
+      - Masternodes:
+        - "설정 가이드 (Windows)": international/cn/masternodes/deployment_win.md
