@@ -15,9 +15,9 @@
 # 要求3 - 为您的Masternode创建一个公共地址
 您必须为您的masternode创建一个唯一的接收地址。通过从钱包左上角的文件中选择接收地址....，可以在钱包中创建收据地址。选择“新地址”，输入适当的名称（例如MN1），然后单击“确定”以创建新的接收地址。
 
-![N|Solid](https://thumb.ibb.co/iu4DWK/EXT_EXSOLUTION_MASTERNODE_PROOF_OF_STAKE_POS_SECURE_1.png) https://thumb.ibb.co/iu4DWK/EXT_EXSOLUTION_MASTERNODE_PROOF_OF_STAKE_POS_SECURE_1.png)
+![N|Solid](https://thumb.ibb.co/iu4DWK/EXT_EXSOLUTION_MASTERNODE_PROOF_OF_STAKE_POS_SECURE_1.png)
 
-![N|Solid](https://thumb.ibb.co/bZRSrK/EXT_EXSOLUTION_MASTERNODE_PROOF_OF_STAKE_POS_SECURE_2.png) https://thumb.ibb.co/bZRSrK/EXT_EXSOLUTION_MASTERNODE_PROOF_OF_STAKE_POS_SECURE_2.png)
+![N|Solid](https://thumb.ibb.co/bZRSrK/EXT_EXSOLUTION_MASTERNODE_PROOF_OF_STAKE_POS_SECURE_2.png)
 
 
 # 步骤4 - 生成Masternode的密钥
@@ -25,34 +25,34 @@
 要生成Masternode键，请选择工具 - >调试窗口 - >控制台。
 在调试控制台中，键入“masternode genkey”以生成唯一的masternode密钥。 保存这些详细信息以供日后使用
 
-![N|Solid](https://thumb.ibb.co/bBNBJz/EXT_EXSOLUTION_MASTERNODE_PROOF_OF_STAKE_POS_SECURE_3.png) https://thumb.ibb.co/bBNBJz/EXT_EXSOLUTION_MASTERNODE_PROOF_OF_STAKE_POS_SECURE_3.png)
+![N|Solid](https://thumb.ibb.co/bBNBJz/EXT_EXSOLUTION_MASTERNODE_PROOF_OF_STAKE_POS_SECURE_3.png)
 
 # 步骤5 - 将10,000 EXT转移到您的masternode公共地址。
 要允许您的masternode启动，您必须将10,000 EXT发送到您本地钱包的masternode地址，如您打算利用的步骤3（MN1）中生成的那样。 交易必须是10,000 EXT。 进行此交易时，请务必考虑收费。 窗口钱包将显示存入的总金额，因此请确保它在您打算操作的MN1 Masternode地址的单个事务中准确读取10,000 EXT。
- 
- ![N|Solid](https://thumb.ibb.co/gTVyyz/EXT_EXSOLUTION_MASTERNODE_PROOF_OF_STAKE_POS_SECURE_5.png) https://thumb.ibb.co/gTVyyz/EXT_EXSOLUTION_MASTERNODE_PROOF_OF_STAKE_POS_SECURE_5.png)
- 
+
+ ![N|Solid](https://thumb.ibb.co/gTVyyz/EXT_EXSOLUTION_MASTERNODE_PROOF_OF_STAKE_POS_SECURE_5.png)
+
 # 步骤6 - 保存事务和退出ID
 您在Masternode公共地址中进行的存款的交易和退出ID将需要稍后添加到masternode配置文件中。 现在寻求这些信息将使我们达到这一点时更容易一些。 要获取事务和退出ID，请转到“工具” - >“调试窗口” - >“控制台”。 在调试控制台中，写入“Masternode Output”将显示输出和事务ID以及输出。 如果没有退出，您可能误读了本指南的第5步。 保存这些详细信息以供日后使用
 
- 
- ![N|Solid](https://thumb.ibb.co/gFOwke/EXT_EXSOLUTION_MASTERNODE_PROOF_OF_STAKE_POS_SECURE_.png) https://thumb.ibb.co/gFOwke/EXT_EXSOLUTION_MASTERNODE_PROOF_OF_STAKE_POS_SECURE_4.png)
- 
+
+ ![N|Solid](https://thumb.ibb.co/gFOwke/EXT_EXSOLUTION_MASTERNODE_PROOF_OF_STAKE_POS_SECURE_.png)
+
  # 步骤7 - 编辑exsolution.conf文件
 我们现在将配置Masternode。转到工具 - >打开钱包配置文件。
 将以下配置设置粘贴到编辑器中：
 ```
-masternode=1 
+masternode=1
 masternodeprivkey=[MASTERNODEPRIVKEY]
 externalip=[EXTERNALIP]
 port=21527
-rpcuser=[RPCUSER] 
-rpcpassword=[RPCPASSWORD]  
+rpcuser=[RPCUSER]
+rpcpassword=[RPCPASSWORD]
 rpcport=21636
-rpcallowip=127.0.0.1  
-daemon=1  
-server=1  
-staking=0  
+rpcallowip=127.0.0.1
+daemon=1
+server=1
+staking=0
 listenonion=0
 替换以下文本：
 [MASTERNODEPRIVKEY]：Windows安装在第4步中生成的组合。
@@ -67,7 +67,7 @@ listenonion=0
 转到工具 - >打开Masternode配置文件。
 使用Masternode配置信息添加新行：
 ```
-MasternodeName YOUR-IP：21636 masternodeprivkey collat​​eral_output_output_txid collat​​eral_output_output_index
+MasternodeName YOUR-IP：21636 masternodeprivkey collateral_output_output_txid collateral_output_output_index
 ```
 它应该如下所示：
 ```

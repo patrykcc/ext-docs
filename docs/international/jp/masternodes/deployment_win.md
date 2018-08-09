@@ -16,9 +16,9 @@ exsolution-1.1.0-win64-setup.exeインストールファイルを実行します
 # ステップ3 - あなたのMasternodeのパブリックアドレスを作成する
 あなたのmasternodeに固有の受信アドレスを作成する必要があります。 Walletの左上にあるファイルからReceiving Address ....を選択すると、ウォレットに領収書アドレスを作成できます。 [新しいアドレス]を選択し、適切な名前（たとえばMN1）を入力し、[OK]をクリックして新しい受信アドレスを作成します。
 
-![N|Solid](https://thumb.ibb.co/iu4DWK/EXT_EXSOLUTION_MASTERNODE_PROOF_OF_STAKE_POS_SECURE_1.png) https://thumb.ibb.co/iu4DWK/EXT_EXSOLUTION_MASTERNODE_PROOF_OF_STAKE_POS_SECURE_1.png)
+![N|Solid](https://thumb.ibb.co/iu4DWK/EXT_EXSOLUTION_MASTERNODE_PROOF_OF_STAKE_POS_SECURE_1.png)
 
-![N|Solid](https://thumb.ibb.co/bZRSrK/EXT_EXSOLUTION_MASTERNODE_PROOF_OF_STAKE_POS_SECURE_2.png) https://thumb.ibb.co/bZRSrK/EXT_EXSOLUTION_MASTERNODE_PROOF_OF_STAKE_POS_SECURE_2.png)
+![N|Solid](https://thumb.ibb.co/bZRSrK/EXT_EXSOLUTION_MASTERNODE_PROOF_OF_STAKE_POS_SECURE_2.png)
 
 
 # ステップ4 - Masternodeへのキーを生成する
@@ -26,33 +26,33 @@ exsolution-1.1.0-win64-setup.exeインストールファイルを実行します
 Masternodeキーを生成するには、Tools - > Debug Window - > Consoleを選択します。
 デバッグコンソールで、「masternode genkey」と入力して、固有のマスターキーを生成します。 後で使用できるようにこれらの詳細を保存します。
 
-![N|Solid](https://thumb.ibb.co/bBNBJz/EXT_EXSOLUTION_MASTERNODE_PROOF_OF_STAKE_POS_SECURE_3.png) https://thumb.ibb.co/bBNBJz/EXT_EXSOLUTION_MASTERNODE_PROOF_OF_STAKE_POS_SECURE_3.png)
+![N|Solid](https://thumb.ibb.co/bBNBJz/EXT_EXSOLUTION_MASTERNODE_PROOF_OF_STAKE_POS_SECURE_3.png)
 
 # ステップ5 - あなたのmasternodeパブリックアドレスに10,000 EXTを転送します。
 masternodeを開始できるようにするには、使用するステップ3（MN1）で生成されたローカルウォレットのmasternodeアドレスに10,000 EXTを送信する必要があります。 トランザクションは正確に10,000 EXTでなければなりません。 この取引をするときは、必ず手数料を考慮してください。 窓口には入金総額が表示されますので、ご使用になる予定のMN1 Masternodeアドレスで、1回の取引で正確に10,000口座を読み取るようにしてください。
- 
- ![N|Solid](https://thumb.ibb.co/gTVyyz/EXT_EXSOLUTION_MASTERNODE_PROOF_OF_STAKE_POS_SECURE_5.png) https://thumb.ibb.co/gTVyyz/EXT_EXSOLUTION_MASTERNODE_PROOF_OF_STAKE_POS_SECURE_5.png)
- 
+
+ ![N|Solid](https://thumb.ibb.co/gTVyyz/EXT_EXSOLUTION_MASTERNODE_PROOF_OF_STAKE_POS_SECURE_5.png)
+
 # ステップ6 - トランザクションを保存して終了ID
 あなたのMasternode公開アドレスで行った預金のトランザクションと出口IDは、後でmasternode設定ファイルに追加する必要があります。 今この情報を求めることは、この点に達すると少し楽になります。 トランザクションと終了IDを取得するには、ツール - >デバッグウィンドウ - >コンソールを選択します。 デバッグコンソールでは、 "masternode output"と出力とトランザクションIDと出力が表示されます。 出口がない場合は、このガイドの第5ステップを誤読している可能性があります。 後で使用できるようにこれらの詳細を保存します。
- 
- ![N|Solid](https://thumb.ibb.co/gFOwke/EXT_EXSOLUTION_MASTERNODE_PROOF_OF_STAKE_POS_SECURE_.png) https://thumb.ibb.co/gFOwke/EXT_EXSOLUTION_MASTERNODE_PROOF_OF_STAKE_POS_SECURE_4.png)
- 
+
+ ![N|Solid](https://thumb.ibb.co/gFOwke/EXT_EXSOLUTION_MASTERNODE_PROOF_OF_STAKE_POS_SECURE_.png)
+
 # ステップ7 - exsolution.confファイルを編集する
 これでMasternodeを設定します。 [ツール] - > [ウォレット設定ファイルを開く]を選択します。
 次の構成設定をエディタに貼り付けます。
 ```
-masternode=1 
+masternode=1
 masternodeprivkey=[MASTERNODEPRIVKEY]
 externalip=[EXTERNALIP]
 port=21527
-rpcuser=[RPCUSER] 
-rpcpassword=[RPCPASSWORD]  
+rpcuser=[RPCUSER]
+rpcpassword=[RPCPASSWORD]
 rpcport=21636
-rpcallowip=127.0.0.1  
-daemon=1  
-server=1  
-staking=0  
+rpcallowip=127.0.0.1
+daemon=1
+server=1
+staking=0
 listenonion=0
 次のテキストを置き換えます。
 [MASTERNODEPRIVKEY]：ステップ4で、Windowsのセットアップ時に発電ポートフォリオ。

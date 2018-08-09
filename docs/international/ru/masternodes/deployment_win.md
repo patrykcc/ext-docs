@@ -16,9 +16,9 @@
 # Шаг 3 - Создайте общедоступный адрес для вашего Masternode
 Вы должны создать уникальный адрес получателя для вашего мазнета. Адрес чека можно создать в кошельке, выбрав «Получить адрес ...» из файла, расположенного в верхнем левом углу кошелька. Выберите «Новый адрес», введите соответствующее имя (например, MN1) и нажмите «ОК», чтобы создать новый адрес получателя.
 
-![N|Solid](https://thumb.ibb.co/iu4DWK/EXT_EXSOLUTION_MASTERNODE_PROOF_OF_STAKE_POS_SECURE_1.png) https://thumb.ibb.co/iu4DWK/EXT_EXSOLUTION_MASTERNODE_PROOF_OF_STAKE_POS_SECURE_1.png)
+![N|Solid](https://thumb.ibb.co/iu4DWK/EXT_EXSOLUTION_MASTERNODE_PROOF_OF_STAKE_POS_SECURE_1.png)
 
-![N|Solid](https://thumb.ibb.co/bZRSrK/EXT_EXSOLUTION_MASTERNODE_PROOF_OF_STAKE_POS_SECURE_2.png) https://thumb.ibb.co/bZRSrK/EXT_EXSOLUTION_MASTERNODE_PROOF_OF_STAKE_POS_SECURE_2.png)
+![N|Solid](https://thumb.ibb.co/bZRSrK/EXT_EXSOLUTION_MASTERNODE_PROOF_OF_STAKE_POS_SECURE_2.png)
 
 
 # Шаг 4 - сгенерируйте ключ к Masternode
@@ -26,32 +26,32 @@
 Для генерации ключей Masternode выберите Инструменты -> Окно отладки -> Консоль.
 В консоли отладки введите "masternode genkey" для генерации уникального ключа масштаба. Сохраните эти данные для последующего использования.
 
-![N|Solid](https://thumb.ibb.co/bBNBJz/EXT_EXSOLUTION_MASTERNODE_PROOF_OF_STAKE_POS_SECURE_3.png) https://thumb.ibb.co/bBNBJz/EXT_EXSOLUTION_MASTERNODE_PROOF_OF_STAKE_POS_SECURE_3.png)
+![N|Solid](https://thumb.ibb.co/bBNBJz/EXT_EXSOLUTION_MASTERNODE_PROOF_OF_STAKE_POS_SECURE_3.png)
 
 # Шаг 5 - Перенести 10 000 EXT на ваш общий адрес в мастере.
 Чтобы разрешить запуск вашего маска, вы должны отправить 10 000 EXT на адрес мастона локального кошелька, который был сгенерирован на шаге 3 (MN1), который вы намереваетесь использовать. Транзакция должна быть ровно 10 000 EXT. Когда вы совершаете эту транзакцию, обязательно учитывайте плату. Кошелек окна покажет вам общую сумму депозита, поэтому убедитесь, что он считывает ровно 10 000 EXT в одной транзакции на адресе MN1 Masternode, который вы собираетесь использовать.
- 
- ![N|Solid](https://thumb.ibb.co/gTVyyz/EXT_EXSOLUTION_MASTERNODE_PROOF_OF_STAKE_POS_SECURE_5.png) https://thumb.ibb.co/gTVyyz/EXT_EXSOLUTION_MASTERNODE_PROOF_OF_STAKE_POS_SECURE_5.png)
- 
+
+ ![N|Solid](https://thumb.ibb.co/gTVyyz/EXT_EXSOLUTION_MASTERNODE_PROOF_OF_STAKE_POS_SECURE_5.png)
+
 # Шаг 6 - Сохранить идентификатор транзакции и выхода
 Идентификатор транзакции и выхода из депозита, который вы сделали в вашем общедоступном адресе Masternode, необходимо будет добавить в конфигурационный файл masternode позже. Поиск этой информации теперь сделает вещи немного легче, когда мы достигнем этой точки. Чтобы получить идентификатор транзакции и выхода, откройте «Инструменты» - «Окно отладки» -> «Консоль». В консоли отладки напишите «Output masternode», на котором отображаются выходы и идентификатор транзакции и вывод. Если выхода нет, вы, вероятно, неправильно поняли шаг 5 этого руководства. Сохраните эти данные для последующего использования.
- 
- ![N|Solid](https://thumb.ibb.co/gFOwke/EXT_EXSOLUTION_MASTERNODE_PROOF_OF_STAKE_POS_SECURE_.png) https://thumb.ibb.co/gFOwke/EXT_EXSOLUTION_MASTERNODE_PROOF_OF_STAKE_POS_SECURE_4.png)
+
+ ![N|Solid](https://thumb.ibb.co/gFOwke/EXT_EXSOLUTION_MASTERNODE_PROOF_OF_STAKE_POS_SECURE_.png)
 # Шаг 7 - Отредактируйте файл exsolution.conf
 Теперь мы настроим Masternode. Откройте Инструменты -> Файл конфигурации открытого кошелька.
 Вставьте следующие параметры конфигурации в редактор:
 ```
-masternode=1 
+masternode=1
 masternodeprivkey=[MASTERNODEPRIVKEY].
 externalip=[EXTERNALIP][EXTERNALIP].
 port=21527
-rpcuser=[RPCUSER][RPCUSER]. 
-rpcpassword=[RPCPASSWORD][RPCPASSWORD].  
+rpcuser=[RPCUSER][RPCUSER].
+rpcpassword=[RPCPASSWORD][RPCPASSWORD].
 rpcport=21636
-rpcallowip=127.0.0.0.0.1  
-daemon=1  
-serveur=1  
-Staking=0  
+rpcallowip=127.0.0.0.0.1
+daemon=1
+serveur=1
+Staking=0
 listenonion=0
 [MASTERNODEPRIVKEY]: создается при настройке Windows Wallet на шаге 4.
 [EXTERNALIP]: установите этот параметр на общедоступный IP-адрес ваших серверов.

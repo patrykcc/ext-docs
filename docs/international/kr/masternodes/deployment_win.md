@@ -17,9 +17,9 @@ exsolution-1.1.0-win64-setup.exe 설치 파일을 실행하십시오. Exsolution
 # 3 단계 - Masternode의 공개 주소 만들기
 마스터 노드에 대해 고유 한 수신 주소를 만들어야합니다. Wallet의 왼쪽 상단에있는 파일에서 Receiving Address ....를 선택하여 Wallet에 영수증 주소를 생성 할 수 있습니다. 새 주소를 선택하고 적절한 이름 (예 : MN1)을 입력 한 다음 확인을 클릭하여 새 수신 주소를 만듭니다.
 
-![N|Solid](https://thumb.ibb.co/iu4DWK/EXT_EXSOLUTION_MASTERNODE_PROOF_OF_STAKE_POS_SECURE_1.png) https://thumb.ibb.co/iu4DWK/EXT_EXSOLUTION_MASTERNODE_PROOF_OF_STAKE_POS_SECURE_1.png)
+![N|Solid](https://thumb.ibb.co/iu4DWK/EXT_EXSOLUTION_MASTERNODE_PROOF_OF_STAKE_POS_SECURE_1.png)
 
-![N|Solid](https://thumb.ibb.co/bZRSrK/EXT_EXSOLUTION_MASTERNODE_PROOF_OF_STAKE_POS_SECURE_2.png) https://thumb.ibb.co/bZRSrK/EXT_EXSOLUTION_MASTERNODE_PROOF_OF_STAKE_POS_SECURE_2.png)
+![N|Solid](https://thumb.ibb.co/bZRSrK/EXT_EXSOLUTION_MASTERNODE_PROOF_OF_STAKE_POS_SECURE_2.png)
 
 
 # 4 단계 - Masternode에 대한 키 생성
@@ -27,33 +27,33 @@ Masternode에 고유 한 마스터 노드 키를 만들어야합니다. 이 키�
 Masternode 키를 생성하려면 Tools -> Debug Window -> Console을 선택하십시오.
 디버그 콘솔에서 "masternode genkey"를 입력하여 고유 한 마스터 노드 키를 생성합니다. 나중에 사용할 수 있도록 이러한 세부 정보를 저장하십시오.
 
-![N|Solid](https://thumb.ibb.co/bBNBJz/EXT_EXSOLUTION_MASTERNODE_PROOF_OF_STAKE_POS_SECURE_3.png) https://thumb.ibb.co/bBNBJz/EXT_EXSOLUTION_MASTERNODE_PROOF_OF_STAKE_POS_SECURE_3.png)
+![N|Solid](https://thumb.ibb.co/bBNBJz/EXT_EXSOLUTION_MASTERNODE_PROOF_OF_STAKE_POS_SECURE_3.png)
 
 # 5 단계 - 10,000 EXT를 귀하의 마스터 노드 공용 주소로 전송하십시오.
 masternode를 시작하려면 사용하려는 3 단계 (MN1)에서 생성 된대로 로컬 지갑의 마스터 노드 주소에 10,000 EXT를 보내야합니다. 트랜잭션은 정확히 10,000 EXT 여야합니다. 이 거래를 할 때 수수료를 고려해야합니다. 창 지갑에는 입금 된 총 금액이 표시되므로 조작하려는 MN1 Masternode 주소에서 단일 거래에서 정확히 10,000 EXT를 읽어야합니다.
- 
- ![N|Solid](https://thumb.ibb.co/gTVyyz/EXT_EXSOLUTION_MASTERNODE_PROOF_OF_STAKE_POS_SECURE_5.png) https://thumb.ibb.co/gTVyyz/EXT_EXSOLUTION_MASTERNODE_PROOF_OF_STAKE_POS_SECURE_5.png)
- 
+
+ ![N|Solid](https://thumb.ibb.co/gTVyyz/EXT_EXSOLUTION_MASTERNODE_PROOF_OF_STAKE_POS_SECURE_5.png)
+
 # 6 단계 - 거래 및 출구 ID 저장
 나중에 Masternode 공개 주소에서 만든 입금액의 거래 및 탈퇴 ID는 나중에 masternode 구성 파일에 추가해야합니다. 이 정보를 얻으려면이 시점에 도달하면 조금 더 쉬워 질 것입니다. 트랜잭션과 종료 ID를 얻으려면 도구 -> 디버그 창 -> 콘솔로 이동하십시오. 디버그 콘솔에서 "masternode output"은 출력과 트랜잭션 ID 및 출력을 표시합니다. 이탈이 없으면이 안내서의 5 단계를 잘못 읽었을 것입니다. 나중에 사용할 수 있도록 이러한 세부 정보를 저장하십시오.
- 
- ![N|Solid](https://thumb.ibb.co/gFOwke/EXT_EXSOLUTION_MASTERNODE_PROOF_OF_STAKE_POS_SECURE_.png) https://thumb.ibb.co/gFOwke/EXT_EXSOLUTION_MASTERNODE_PROOF_OF_STAKE_POS_SECURE_4.png)
- 
+
+ ![N|Solid](https://thumb.ibb.co/gFOwke/EXT_EXSOLUTION_MASTERNODE_PROOF_OF_STAKE_POS_SECURE_.png)
+
 # 7 단계 - exsolution.conf 파일 편집
 이제 Masternode를 구성 할 것입니다. 도구 -> 월렛 구성 파일 열기로 이동하십시오.
 다음 구성 설정을 편집기에 붙여 넣습니다.
 ```
-masternode=1 
+masternode=1
 masternodeprivkey=[MASTERNODEPRIVKEY]
 externalip=[EXTERNALIP]
 port=21527
-rpcuser=[RPCUSER] 
-rpcpassword=[RPCPASSWORD]  
+rpcuser=[RPCUSER]
+rpcpassword=[RPCPASSWORD]
 rpcport=21636
-rpcallowip=127.0.0.1  
-daemon=1  
-server=1  
-staking=0  
+rpcallowip=127.0.0.1
+daemon=1
+server=1
+staking=0
 listenonion=0
 
 다음 텍스트를 바꿉니다.
