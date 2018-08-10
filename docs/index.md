@@ -1,5 +1,10 @@
 # Exsolution knowledge base
 
+![](./images/logos/exsolution-logo-rectangle-black.png)
+
+
+# Welcome!
+
 Welcome to the Exsolution knowledge base. All the needed information to get started and be autonomous is available here.
 
 It is hosted on Github, all pages contain a :crayon: link that redirects to Github editor to make updates with ease.

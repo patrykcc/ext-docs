@@ -16,6 +16,8 @@ markdown_extensions:
 strict: true
 nav:
   - Home: index.md
+  - Wallet:
+    - "Upgrade guide": wallet/upgrade_linux.md
   - Masternodes:
     - "Introduction": masternodes/introduction.md
     - "Setup guide (Linux)": masternodes/deployment_linux.md
