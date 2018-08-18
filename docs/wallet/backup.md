@@ -35,7 +35,7 @@ You may also copy it to a cloud services like  [Mega](https://mega.nz/#newsignup
 ![](images/wallet_backup.png)
 
 ## Restore
-To restore the backup, simply copy your backed up `wallet.dat` over an existing one in the bitcoin data location.
+To restore the backup, simply copy your backed up `wallet.dat` over an existing one in the wallet data location.
 
 
 # Default Location
