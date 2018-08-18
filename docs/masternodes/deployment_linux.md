@@ -166,10 +166,10 @@ apt-get -y install vim wget curl unzip
 ```
 * Install EXT client:
 ```
-wget https://github.com/exsolution/ext-wallet/releases/download/v1.1.0.0/exsolution-1.1.0-linux64.tar.gz
-tar -xvf exsolution-1.1.0-linux64.tar.gz
-rm exsolution-1.1.0-linux64.tar.gz
-sudo mv ./exsolution-1.0.0/bin/exsolution* /usr/local/bin
+wget https://github.com/exsolution/ext-wallet/releases/download/v1.2.0.0/exsolution-1.2.0-linux64.tar.gz
+tar -xvf exsolution-1.2.0-linux64.tar.gz
+rm exsolution-1.2.0-linux64.tar.gz
+sudo mv ./exsolution-1.2.0/bin/exsolution* /usr/local/bin
 exsolutiond
 ```
 * Edit the configuration file:
