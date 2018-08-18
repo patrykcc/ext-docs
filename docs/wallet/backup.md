@@ -12,7 +12,7 @@ It is strongly recommended to _encrypt_ Your wallet by a **strong** password to 
 File has different locations based on the operating system. By default, file can be found in following locations:
 
 * **Windows**: `%APPDATA%\Exsolution`
-* **Linux**: `~/.exsolution_`
+* **Linux**: `~/.exsolution`
 * **Mac OS X**: `~/Library/Application Support/exsolution/`
 
 If you can’t find the location please refer to the bottom of this page.
@@ -35,7 +35,7 @@ You may also copy it to a cloud services like  [Mega](https://mega.nz/#newsignup
 ![](images/wallet_backup.png)
 
 ## Restore
-To restore the backup, simply copy your backed up `wallet.dat` over an existing one in the bitcoin data location.
+To restore the backup, simply copy your backed up `wallet.dat` over an existing one in the wallet data location.
 
 
 # Default Location
